@@ -3,6 +3,7 @@ body {
   background-color: #f8f8f8;
   color: #333;
   margin: 0;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 header {
@@ -10,12 +11,14 @@ header {
   color: #ecf0f1;
   padding: 20px;
   text-align: center;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 nav {
   display: flex;
   justify-content: center;
   background-color: #34495e;
+  transition: background-color 0.5s;
 }
 
 nav a {
@@ -23,6 +26,7 @@ nav a {
   color: #ecf0f1;
   text-decoration: none;
   padding: 15px 20px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
@@ -44,6 +48,11 @@ h2 {
 .photo {
   width: 100%;
   height: auto;
+  transition: transform 0.3s;
+}
+
+.photo:hover {
+  transform: scale(1.1);
 }
 
 footer {
@@ -54,4 +63,5 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  transition: background-color 0.5s, color 0.5s;
 }
